@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 common: &common
   adapter: postgresql
-  database: bootstrap4
+  database: bootstrap3
   user: derek
   host: localhost
   
@@ -15,14 +15,14 @@ common: &common
 # Do not set this db to the same as development or production.
 development:
   <<: *common
-  database: bootstrap4_development
+  database: bootstrap3_development
 
 test:
   <<: *common
-  database: bootstrap4_test
+  database: bootstrap3_test
   
 
 production:
   <<: *common
-  database: bootstrap4_production
+  database: bootstrap3_production
   
