@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+
+    <title>Rails4</title>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    
+    <%= csrf_meta_tags %>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="http://twitter.github.io/bootstrap/assets/ico/favicon.png">
+  </head>
+
+  <body><div id="StayFocusd-infobar" style="display:none;"><img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/img/eye_19x19_red.png"><span id="StayFocusd-infobar-msg"></span><span id="StayFocusd-infobar-links"><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#" id="StayFocusd-infobar-hide">hide once</a></span></div>
+
+    <div class="container">
+
+      <div class="masthead">
+        
+        <div class="navbar">
+          <div class="navbar-top">
+            <ul class="nav">
+              <li>Logo</li>
+              <li>Toolbox</li>
+              <li>Help</li>
+              <li><%= text_field_tag 'search', 'search for...' %></li>
+              <li>Notifications</li>
+            </ul>
+          </div>
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li class="active"><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Mindset</a></li>
+                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Idea Extraction</a></li>
+                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Info-pack</a></li>
+                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Pre-selling</a></li>
+                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Building</a></li>
+                <li><a href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Scaling</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1><%= yield %></h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <a class="btn btn-large btn-success" href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">Get started today</a>
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">View details »</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">View details »</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+          <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/justified-nav.html#">View details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>© Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag "bootstrap", "data-turbolinks-track" => true %>
+    
+
+  
+
+</body></html>
