@@ -1,6 +1,4 @@
 Rails3::Application.routes.draw do
-  resources :phases
-
   resources :domains
 
   # The priority is based upon order of creation: first created -> highest priority.
